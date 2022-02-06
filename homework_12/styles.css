@@ -1,0 +1,26 @@
+#example {
+    margin: 71px 0 0 150px;
+    padding: 10px 20px;
+    font-size: 20px;
+    border:2px solid violet;
+    border-radius: 5px;
+}
+
+.tooltip {
+    position: absolute;
+    background-color: yellow;
+    padding: 3px 4px;
+}
+
+.tooltip:after {
+    content: "";
+    position: absolute;
+    bottom: -7px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 7px solid #000;
+}
